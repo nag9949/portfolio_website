@@ -1,0 +1,137 @@
+// #header-home .container
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+// paragraph
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+
+// section-title
+.section-title {
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+
+// bottom-line
+.bottom-line {
+  display: block;
+  height: 2px;
+  width: 3rem;
+  background: chocolate;
+  margin: 0 auto 1rem auto;
+}
+
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.75rem 1.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    background: $secondary-color;
+    color: #ffff;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background: $dark-color;
+    color: $light-color;
+  }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: $secondary-color;
+}
+
+// text-center
+.text-center {
+  text-align: center;
+}
+
+// { Padding }
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// { Margin }
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+
+  &-2 {
+    margin: 2rem 0;
+  }
+
+  &-3 {
+    margin: 3rem 0;
+  }
+
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+// { Backgrouds }
+.bg {
+  &-main {
+    background: $secondary-color;
+    color: #ffff;
+  }
+
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: #ffff;
+  }
+}
+
+// borders-contact-page
+.brdr {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

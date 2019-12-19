@@ -1,0 +1,250 @@
+// Media Queries for Tablets and Smaller devices
+@media(max-width:800px) {
+  #header {
+    &-home {
+      height: 30rem;
+
+      .header-content {
+        padding-top: 5rem;
+      }
+    }
+  }
+}
+
+
+// { SmartPhones }
+@media(max-width:680px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  // header
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid #FFD700;
+      // background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+
+  }
+
+  // { Stack-Grid-Columns}
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  // home-{Main section-index page}
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px solid $light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // { About }
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bio-img'
+          'bio'
+          'awrd1'
+          'awrd2'
+          'awrd3';
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+
+  //{ Contact Page }
+  #contact {
+
+    //  <!-- Section-A:{ Contact Form } -->
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'msg';
+      }
+
+      button[type='submit'],
+      button[type='reset'] {
+        width: 40%;
+        margin-right: 1rem;
+      }
+    }
+
+    // <!-- Section-B:{ Contact Info } -->
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #555;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    // <!-- Section-C:{ Tag-line } -->
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+  // { Footer }
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+
+}
+
+// { Media-Queries for
+//  Landscape Mode for  pixel2/xl and iphone 6/7/8 plus }
+@media(max-height:590px) {
+
+  // paragraph
+  .lead {
+    margin-bottom: 3.3rem;
+  }
+
+  #header-home {
+    .header-content {
+      padding-top: 2.8rem;
+
+      h1 {
+        font-size: 3.3rem;
+      }
+    }
+  }
+}
+
+// { Media-Queries for
+// Landscape Mode iphone X and 6/7/8 }
+@media(max-height:400px) {
+
+  // paragraph
+  .lead {
+    margin-bottom: 3.6rem;
+  }
+
+  #header-home {
+    .header-content {
+      padding-top: 3.3rem;
+
+      h1 {
+        font-size: 2.9rem;
+      }
+    }
+  }
+
+  // { about-c }
+  #about {
+    &-c {
+      background: rgba(110, 105, 105, 0.315);
+
+      .about-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        // gap: 0.3rem;
+
+        img {
+          width: 180px;
+          // width: 100%;
+          // margin-right: 0.5rem;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+// { Media-Queries for 
+// Landscape Mode for small devices for s5 }
+@media(max-height:362px) {
+
+  .lead {
+    margin-bottom: 3rem;
+  }
+
+  #header-home {
+    .header-content {
+      padding-top: 3.3rem;
+
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
+// { Media-Queries for
+//  Landscape Mode for small devices for  ip5/se }
+@media(max-height:330px) {
+
+  .lead {
+    margin-bottom: 2rem;
+  }
+
+  #header-home {
+    .header-content {
+      padding-top: 3.3rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
