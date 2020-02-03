@@ -29,6 +29,7 @@
   display: block;
   height: 2px;
   width: 3rem;
+  // width: 100%;
   background: chocolate;
   margin: 0 auto 1rem auto;
 }
@@ -41,6 +42,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.5s;
+  border-radius: 50px;
 }
 
 .btn {
@@ -93,6 +95,21 @@ input[class^='btn-']:hover {
   }
 }
 
+.p {
+  &-1 {
+    padding: 1rem;
+  }
+
+  &-2 {
+    padding: 2rem;
+  }
+
+  &-3 {
+    padding: 3rem;
+  }
+
+}
+
 // { Margin }
 .my {
   &-1 {
@@ -134,4 +151,10 @@ input[class^='btn-']:hover {
 .brdr {
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+// project bio
+.prjbio {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }

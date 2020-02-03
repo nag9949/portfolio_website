@@ -85,9 +85,7 @@
       }
     }
 
-    &-c {
-      display: none;
-    }
+
   }
 
   //{ Contact Page }
@@ -185,27 +183,6 @@
         font-size: 2.9rem;
       }
     }
-  }
-
-  // { about-c }
-  #about {
-    &-c {
-      background: rgba(110, 105, 105, 0.315);
-
-      .about-logos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        // gap: 0.3rem;
-
-        img {
-          width: 180px;
-          // width: 100%;
-          // margin-right: 0.5rem;
-          padding-right: 0.5rem;
-        }
-      }
-    }
-
   }
 
 }
