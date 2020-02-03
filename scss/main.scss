@@ -2,18 +2,15 @@
 @import "utilities";
 @import "item_grid";
 
-// { General-Styles }
-// font-family: 'Playfair Display', serif;
-// font-family: 'Arvo', serif;
-// font-family: 'Dosis', sans-serif;
-// font-family: 'Merriweather Sans', sans-serif;
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  // font-family: 'Lusitana', serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -133,7 +130,7 @@ img {
   &-b {
     .stats {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
 
       li {
         line-height: 2;
@@ -208,6 +205,7 @@ img {
       &-step {
         position: absolute;
         top: 0;
+        // left: 0;
         right: 0;
         font-size: 30px;
         width: 15px;
@@ -235,8 +233,7 @@ img {
     .about-info {
       display: grid;
       grid-template-areas:
-        'bio-img bio  bio'
-        'awrd1 awrd2 awrd3';
+        'bio-img bio  bio' ;
       gap: 1.2rem;
     }
 
@@ -249,26 +246,9 @@ img {
       grid-area: bio;
       border-left: 3px solid $secondary-color;
       padding: 1rem;
+      
     }
 
-    .award-1 {
-      grid-area: awrd1;
-    }
-
-    .award-2 {
-      grid-area: awrd2;
-    }
-
-    .award-3 {
-      grid-area: awrd3;
-    }
-
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      color: $secondary-color;
-      margin: 1rem;
-    }
 
   }
 
@@ -290,25 +270,8 @@ img {
     }
   }
 
-  // { about-c }
-  &-c {
-    background:rgba(110, 105, 105, 0.315);
-
-    .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      // gap: 0.3rem;
-
-      img {
-        width: 200px;
-        // width: 100%;
-        // margin-right: 0.5rem;
-        padding-right: 0.5rem;
-      }
-    }
-  }
-
-  // { about-c }
+  
+  // { about-d }
 
   &-d {
     .testimonials {
@@ -436,10 +399,10 @@ img {
     .social .fab {
       margin-right: 1rem;
       border: 1px solid #fff;
-      border-radius: 50%;
       width: 20px;
       height: 20px;
       line-height: 20px;
+      border-radius: 50%;
       text-align: center;
       padding: 0.5rem;
 
